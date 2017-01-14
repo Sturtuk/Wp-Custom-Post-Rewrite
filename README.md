@@ -64,13 +64,22 @@ e.g. URL OUTPUT is: https://youdomain.com/post_type/post_title
 
 #To Rewrite with Custom Name
 
+
+
+
 **Custom URL name is: flower**
 
+**Add new field data to $arg array() **
 ```php
-global $wp_rewrite;
-$custom_post_rw = '/projects/%year%/%monthnum%/%day%/%flower%/';
-$wp_rewrite->add_rewrite_tag("%flower%", '([^/]+)', "post_type=");
-$wp_rewrite->add_permastruct('flower', $custom_post_rw, false);
+		'rewrite' => array('slug' => 'flower'),
+```
+**Next Add below line to functions.php file**
+
+```php
+		global $wp_rewrite;
+		$custom_post_rw = '/projects/%year%/%monthnum%/%day%/%flower%/';
+		$wp_rewrite->add_rewrite_tag("%flower%", '([^/]+)', "post_type=");
+		$wp_rewrite->add_permastruct('flower', $custom_post_rw, false);
 ```
 So Now URL is like Below
 URL OUTPUT is: https://youdomain.com/flower/post_title
