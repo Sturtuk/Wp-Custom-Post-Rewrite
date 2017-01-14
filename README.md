@@ -77,5 +77,5 @@ Add new field data to $arg array() **
 		$wp_rewrite->add_rewrite_tag("%flower%", '([^/]+)', "post_type=");
 		$wp_rewrite->add_permastruct('flower', $custom_post_rw, false);
 ```
-So Now URL is like Below
+##So Now URL is like Below##
 URL OUTPUT is: https://youdomain.com/flower/post_title
