@@ -1,7 +1,7 @@
 # Wp-Custom-Post-Rewrite
 Custom Post Type Seo Url Rewrite
 
-
+#This code is for Creating Custom post Type
 ```php
 // Register Custom Post Type
 function custom_post_type() {
