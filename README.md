@@ -64,12 +64,8 @@ e.g. URL OUTPUT is: https://youdomain.com/post_type/post_title
 
 #To Rewrite with Custom Name
 
-
-
-
-**Custom URL name is: flower**
-
-**Add new field data to $arg array() **
+**Custom rewrite name is: flower
+Add new field data to $arg array() **
 ```php
 		'rewrite' => array('slug' => 'flower'),
 ```
